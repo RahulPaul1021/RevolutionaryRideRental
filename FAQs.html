@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- Coding by CodingNepal | www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>FAQs</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='FAQs.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="accordion">
+    <div class="image-box">
+      <img src="FAQ.png" alt="Accordion Image">
+    </div>
+    <div class="accordion-text">
+      <div class="title">FAQ</div>
+    <ul class="faq-text">
+      <li>
+        <div class="question-arrow">
+          <span class="question">How do I make a reservation for a bike rental?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Bike rentals are done online through th company's website. Create a account and look for your preferred bike. Click the photo and it will lead you to a page. Under the "Book Now" section,input the dates when to use the said bike then click "book". The payment will be made at the store upon claiming the bike.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">What is your cancellation policy?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>The company has a 5-day cancellation policy. If the reserved bike is cancelled 5 days or less before the rental date, you will be charged ₹147.5. However, if you cancel befor 6days or more, ther will be no charge.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Is there a charge if I fail to show up on the rental date?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Yes,if you do not show up on rental date state on your reservation, you will be charged ₹300.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">If I return my bike early, do I get a refund?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>No, when you purchase a rental our live inventory systems strictly reseve that bike model and size for you for that duration. That means no other person can start or end their trip during that time period. If you are unsure of your travel plans or the duration of rentalwe suggest starting with the amount of time you are comfortable with. If you wish to extend your multi-day rental please call us and we will confirm the rate and availability. Availability and rate are only guaranteed when you have reserved and paid for your rental in full.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">When do multi-day rental need to be returned?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>A 24 Hr rental is exactly that; the  bike is due back 24 hrs from the time you reserved the bike. For example, if you reserved the bike at 12:00 pm it is due back by 12:00 pm the next day 3-day and weekly rentals are due back on the last day by close unless otherwise stated.For example, for a 3-day rental, if you pick up the bike on Monday at 10:00 it will be due back by Wednesday before the store's close time, 6:00pm. If you rented the bike for one week, it would be due back on the seventh day by the store's close time, in the case that you picked-up on Monday it would be due back Sunday by the store's closing time. If you are not able to return the bike on the agreed-upon date and time please let us know as soon as possible. There will be a ₹147.62 penalty for each day it is not returned.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Who needs to fill out a waiver?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>A waiver must be completed for each individual; those under the age of 18 (minors) must be accompanied by a guardian.</p>
+        <span class="line"></span>
+      </li>
+      <li>
+        <div class="question-arrow">
+          <span class="question">Is a deposit required?</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <p>Yes,at least 50% deposit is required to a bike reservation via paypal.The remaining balance(if any)will be given upon claiming the reserved bike. A government-isssed ID(For Example: Driver's Lcense Passport, Identification Card) is required to be presented upon the pick-up of the bike.</p>
+        <span class="line"></span>
+      </li>
+    </ul>
+    </div>
+  </div>
+
+
+  <script>
+    let li = document.querySelectorAll(".faq-text li");
+    for (var i = 0; i < li.length; i++) {
+      li[i].addEventListener("click", (e)=>{
+        let clickedLi;
+        if(e.target.classList.contains("question-arrow")){
+          clickedLi = e.target.parentElement;
+        }else{
+          clickedLi = e.target.parentElement.parentElement;
+        }
+       clickedLi.classList.toggle("showAnswer");
+      });
+    }
+  </script>
+
+</body>
+</html>
